@@ -1,0 +1,244 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 14px;
+}
+body{
+  width: 100%;
+  background-color: rgb(243, 243, 243);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+.main{
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: 754px;
+  margin: 44px auto 0 auto;
+}
+.phone{
+  background-image: url("/assets/images/phone.png");
+  background-size: cover;
+  width: 384px;
+  height: 618px;
+  margin-right: 20px;
+}
+
+/* --Carousel with the images of the phone-- */
+.carousel{
+  width: 244.5px;
+  height: 440px;
+  position: relative;
+  top: 102px;
+  left: 120px;
+}
+.carousel-div {
+  display: none;
+}
+.transition {
+  -webkit-animation-name: transition;
+  -webkit-animation-duration: 1.5s;
+  animation-name: transition;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes transition {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+@keyframes transition {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+/* ---- */
+
+
+.login{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  width: 350px;
+  min-height: 40rem;
+}
+.logo{
+  width: 175px;
+  height: 51px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+.photo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 10px;
+}
+.photo img{
+  width: 120px;
+}
+.group{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  background-color: #FFF;
+  width: 348px;
+  padding: 1.3rem 0;
+  border: 1px solid lightgray;
+  margin-bottom: 10px;
+}
+.group1{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  background-color: #FFF;
+  width: 348px;
+  padding: 10px;
+  border: 1px solid lightgray;
+}
+.form{
+  margin-top: 24px;
+}
+.login-form{
+  margin: auto;
+  width: 258px;
+  height: 36px;
+  margin-bottom: 6px;
+}
+.login-form input{
+  width: 258px;
+  padding: 10px;
+  font-size: 11px;
+  color: #bbb;
+  background-color: #fafafa;
+  border: 1px solid #bbb;
+  border-radius: 3px;
+}
+button{
+  width: 258px;
+  color: white;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  padding: 5px;
+  border: 0;
+  border-radius: 5px;
+  background-color: rgba(var(--d69,0,149,246),.3);
+}
+.lines{
+  display: flex;
+  margin-top: 18px;
+  margin-bottom: 26px;
+}
+.line1{
+  background-color: #bbb;
+  height: 1px;
+  width: 105px;
+  margin-left: 30px;
+  position: relative;
+  top: .45em;
+}
+.or{
+  color: #888;
+  font-weight: bold;
+  margin: 0 18px;
+}
+.line2{
+  background-color: #bbb;
+  height: 1px;
+  width: 105px;
+  position: relative;
+  top: .45em;
+  margin-right: 30px;
+}
+.facebook{
+  margin: 8px auto;
+  width: 190px;
+  cursor: pointer;
+}
+.facebook img{
+  width: 16px;
+}
+.facebook span{
+  color: #385185;
+  font-size: 13px;
+  font-weight: bold;
+}
+.password{
+  width: 120px;
+  margin: auto;
+  margin-top: 20px;
+}
+.password a{
+  font-size: 11px;
+  color: #00376B;
+}
+.not-account{
+  color: #262626;
+  margin: 13px;
+}
+.blue{
+  color: #0095f6;
+}
+.install-app{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 1.3rem 0;
+}
+.app{
+  font-size: 12px;
+  margin: 10px;
+  color: #262626;
+}
+.download{
+  display: flex;
+  width: 330px;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1rem;
+}
+.app-download{
+  height: 3rem;
+  width: 10rem;
+  background-size: cover;
+}
+.app-download:nth-child(1){
+  background-image: url('/assets/images/apple-button.png');
+  border-radius: 5px;
+}
+.app-download:nth-child(2){
+  background-image: url('/assets/images/googleplay-button.png');
+}
+
+/* ----Responsividade---- */
+@media (max-width: 1024px){
+  .main{
+    width: 90%;
+  }
+}
+@media (max-width:875px){
+  .phone{
+    display: none;
+  }
+  .login{
+    width: 100%;
+  }
+}
+@media (max-width: 450px){
+  body{
+    background-color: white;
+  }  
+  .group,
+  .group1{
+    border: 1px solid transparent;
+  }
+}
